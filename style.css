@@ -1,0 +1,199 @@
+body {
+    background-color:#fff ;
+}
+
+.logo_search {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url(/Img/logo_search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo_campana{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url(/Img/logo_campana.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo_message {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url(/Img/logo_message.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo_user{
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-image: url(/Img/logo_user.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.logo_more{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url(/Img/logo_more.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo_download {
+    background-color: white;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-image: url(/Img/logo_download.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+    border-radius:15px ;
+}
+
+.logo_pinoption {
+    background-color: white;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-image: url(/Img/logo_pinoption.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+}
+
+header {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 0px 5px;
+    position: fixed;
+    z-index: 100;
+}
+header #navbar-pinterest {
+    height: 100%;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+header #navbar-pinterest a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+header #navbar-pinterest a img {
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+}
+
+header #navbar-pinterest .inicio {
+    border-radius:20px;
+    background-color: black;
+    padding: 15px;
+}
+
+header #navbar-pinterest .inicio a {
+    color: white;
+    font-size: 15px;
+}
+
+header #navbar-pinterest .searcher {
+    background-color:rgb(225, 225, 225);
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 850px;
+    padding: 10px;
+    gap: 5px;
+    border-radius: 20px;
+}
+
+header #navbar-pinterest .searcher .finder {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+
+
+header #navbar-pinterest button {
+    background-color: transparent;
+    border: none;
+}
+
+#content {
+    padding: 70px 60px;
+    columns: 5 200px;
+    column-gap: 1em;
+    /* background-color: blueviolet; */
+}
+
+#content .card_image {
+    position: relative;
+    /* background-color: turquoise; */
+}
+
+#content .card_image img {
+    max-width: 100%;
+    border-radius: 1em;
+    margin-bottom: 0.5em;
+}
+
+#content .card_image button {
+    position: absolute;
+    top: 7px;  
+    right: 7px;
+    color: white;
+    background-color: red;
+    border-radius:10px;
+    padding: 7px;
+    border: none;
+}
+
+#content .card_image .card_option {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    gap: 10px;
+    
+}
+
+.card_image .card_option , .card_button {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card_image:hover .card_button{
+    opacity: 1;
+}
+.card_image:hover .card_option{
+    opacity: 1;
+}
+@media (max-width:600px) {
+
+    header #navbar-pinterest .searcher {
+        background-color:transparent;
+    }
+    header #navbar-pinterest .searcher .finder {
+        border: none;
+        font-size: 0;
+    }
+}
